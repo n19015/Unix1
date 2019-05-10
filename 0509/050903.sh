@@ -1,1 +1,1 @@
-touch dir1/dir2/dir3file{01..10}
+touch dir1/dir2/di r3file{01..10}
