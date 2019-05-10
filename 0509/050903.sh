@@ -1,2 +1,1 @@
-cd dir1/dir2/dir3
-touch file{01..10}
+touch dir1/dir2/dir3file{01..10}
