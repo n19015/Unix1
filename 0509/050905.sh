@@ -1,1 +1,1 @@
-rm -r dir12
+rm -r dir1
