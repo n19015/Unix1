@@ -1,8 +1,8 @@
 function cont() {
-echo -n 'continue(y/n)' 
+echo -n 'continue(y/n)'
 read yesno
 if [ $yesno = 'n' ]; then
-    echo 'end...' 
+    echo 'end...'
     exit
 fi
 echo 'continue...'
@@ -10,24 +10,21 @@ echo 'continue...'
 cd $HOME/repo/unix1
 git status
 cont
-case "$1" in
-    *)
+echo 'a.git add-i b.git commit c.git push'
+read a
+case "$a" in
+    a)
         git add -i
+        git status
         ;;
-esac
-git status
-cont
-echo -n 'comment:'
-read comment
-case "$1" in
-    *)
-        git commit -m "$comment"
+   b)
+        echo -n 'comment:'
+        read comment
+        git commit -m "$commentii"
+        git log --online
         ;;
-esac
-git log --online
-cont
-case "$1" in
-    *)
+    c)
         git push
         ;;
 esac
+
