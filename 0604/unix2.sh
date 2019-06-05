@@ -11,7 +11,7 @@ cd $HOME/repo/unix1
 git status
 cont
 case "$1" in
-    *.sh)
+    *)
         git add -i
         ;;
 esac
@@ -20,14 +20,14 @@ cont
 echo -n 'comment:'
 read comment
 case "$1" in
-    *.sh)
+    *)
         git commit -m "$comment"
         ;;
 esac
 git log --online
 cont
 case "$1" in
-    *.sh)
+    *)
         git push
         ;;
 esac

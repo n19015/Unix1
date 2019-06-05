@@ -1,10 +1,7 @@
 #!/bin/bash
 
 if [ -d "$1" ]; then
-    a= ls $1
-    if [ ! -r "$a" ]; then
-        echo $a
+    find $1 -maxdepth 1 -and -type f -not -perm -u=r 
 else
     echo "$1: ディレクトリではありません"
-fi
 fi
