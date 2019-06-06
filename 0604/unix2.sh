@@ -11,22 +11,22 @@ cd $HOME/repo/unix1
 git status
 while :
 do
-echo 'a.git add-i b.git commit c.git push *.exit'
+echo '1.git add-i 2.git commit 3.git push *.exit'
 read a
 case "$a" in
-    a)
+    1)
         git add -i
         git status
 
         ;;
-   b)
+    2)
         echo -n 'comment:'
         read comment
         git commit -m "$commentii"
         git log --online
 
         ;;
-    c)
+    3)
         git push
 
         ;;
